@@ -1,0 +1,284 @@
+﻿
+body {
+    margin: 0;
+    background-color: #f3f3f3;
+    font-family: 'Courier New','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.header {
+    height: 15%;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 28px;
+    background: linear-gradient(132deg, #000000,#af96b6, #430A5D,#563A9C,#8B5DFF,#ffffff);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 15s ease infinite;
+}
+
+h1 {
+    position: center;
+    left: 50%;
+    /*       top: 50%; */
+    transform: translateX(-50%) translateY(-50%);
+    font-family: Open Sans, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    padding: 5px;
+    margin-left: 50%;
+    margin-top:40px;
+}
+
+@keyframes BackgroundGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 400px;
+    height: min-content;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(230, 230, 250, 1);
+}
+
+h2 {
+    text-align: center;
+    color: #430A5D;
+    margin-bottom: 20px;
+}
+
+.textbox input, .textbox select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+    .textbox input:focus, .textbox select:focus,
+    .textbox input:hover, .textbox select:hover {
+        border: 2px solid #430A5D;
+        box-shadow: 0 0 6px #430A5D;
+    }
+
+.button-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #6A42C2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    margin: 10px;
+}
+
+    .button-primary:hover {
+        background-color: white;
+        color: #6A42C2;
+        border: 2px solid #6A42C2;
+    }
+
+.separator {
+    border-top: 1px solid lightgray;
+    margin: 15px 0;
+}
+
+.footer-img {
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    /*    bottom: -878px;*/
+    left: 0px;
+    padding: 0;
+    margin-bottom: 667px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: white;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+}
+
+    .btn:after, .btn:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    .btn:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid black;
+        border-left: 5px solid black;
+    }
+
+    .btn:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+    }
+
+    .btn:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+        .btn:hover:before, .btn:hover:after {
+            width: 100%;
+            height: 100%;
+        }
+
+.butn {
+    width: 100%;
+     padding: 50px;
+    /*background-color: #6A42C2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;*/
+    transition: 0.3s;
+    /font-size: 16px;
+    /
+    /*    background: #ffebee;
+    height: 100vh;
+    scale: 2;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newcss {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: #6A42C2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+/*teacher*/
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin: 0;
+    cursor: pointer;
+}
+
+.panel {
+    display: none;
+    margin-top: 15px;
+    height: min-content;
+}
+
+.visible {
+    display: block;
+}
+
+.corner {
+    float: right;
+    color: white;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.quiz-question {
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+    .card.inactive {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+    .card.active {
+        opacity: 1;
+        z-index: 1;
+    }
+    td{
+/*        padding:5px 5px 5px 5px;*/
+    }
+th{
+/*    padding: 5px 5px 5px 5px;*/
+}
+columns{
+    margin:5px;
+}
+table{
+/*    padding:4px;*/
+    height:40vw;
+}
+.gridth {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+    .gridth th, .grid td {
+        padding: 3px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .gridth th {
+        background-color: #6A42C2;
+        color: white;
+    }
+
+    .gridth tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
