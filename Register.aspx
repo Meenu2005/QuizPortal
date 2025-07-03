@@ -15,7 +15,7 @@
 <body>
     <form id="form1" runat="server">
               <header class="header">
-<h1>Quiz Portal</h1>
+<h1>Quiz </h1>
 </header>
         <div class="container">
             <h2>Register</h2>
